@@ -2,6 +2,40 @@
 
 Debloated rolling-latest **Blender** hydrated on demand from [`awesome-os/b8g-ghost`](https://github.com/awesome-os/b8g-ghost) (`cas-v1`) with a `~118 KB` native C11 **Lumi Hydration Splash** launcher (Keep-Last-5, zero installer).
 
+## Quick Install & Usage
+
+### Windows (PowerShell 1-liner)
+
+```powershell
+irm https://github.com/awesome-os/blender/releases/latest/download/install.ps1 | iex
+```
+
+### Linux (x64 / ARM64) & macOS (Apple Silicon)
+
+```sh
+curl -fsSL https://github.com/awesome-os/blender/releases/latest/download/install.sh | sh
+```
+
+### CLI Usage
+
+```powershell
+# Inspect installed launcher version & help
+blender --version
+blender --help
+
+# Launch Blender or open a .blend scene directly
+blender
+blender ./scene.blend
+
+# Optional: store hydrated CAS layers on a custom drive/path
+$env:B8G_GHOST_CACHE_DIR = "D:\b8g-cas"   # POSIX: export B8G_GHOST_CACHE_DIR=/data/b8g-cas
+blender ./scene.blend
+```
+
+### Releases & Verification
+
+- **Latest Release:** [`awesome-os/blender` Releases](https://github.com/awesome-os/blender/releases/latest) — includes `SHA256SUMS.txt` and the 5-OS matrix (`win64`, `linux-x64`, `linux-arm64`, `macos-arm64`, `wasm32-wasi`) built via [`awesome-os/maintenance-workflows`](https://github.com/awesome-os/maintenance-workflows).
+
 ## Highlights
 
 - **Zero Installer & Zero Bloat:** Hydrates directly into `~/.b8g/cas/blender/<sha256>/` and spawns `blender.exe` / `blender` detached with forwarded user arguments.
