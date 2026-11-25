@@ -93,3 +93,13 @@ gcc -std=c11 -Os -s -Wall -Wextra src/blender_launcher.c -o dist/blender
 ## License
 
 Dual-licensed under **GPL-3.0-or-later OR MIT**.
+
+## Quick Install & Run (Windows / Linux / macOS)
+
+```sh
+# Install / hydrate from v11 CAS via holo-pm
+holo-pm install repository://github.com/awesome-os/blender@main
+
+# Or project & run directly via holo-project (0-byte hardlink)
+holo-project "project://node/blender?from=repository://github.com/awesome-os/blender@main"
+```
