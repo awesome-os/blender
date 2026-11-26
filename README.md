@@ -1,3 +1,5 @@
+> [!NOTE] Consolidated into https://github.com/awesome-os/devtools
+
 # `@awesome-os/blender`
 
 Debloated rolling-latest **Blender** hydrated on demand from [`awesome-os/b8g-ghost`](https://github.com/awesome-os/b8g-ghost) (`cas-v1`) with a `~118 KB` native C11 **Lumi Hydration Splash** launcher (Keep-Last-5, zero installer).
